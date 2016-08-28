@@ -1,0 +1,50 @@
+section {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+figure.svg-container {
+	position: relative;
+	display: inline-block;
+  height: 300px;
+  width: 300px;
+
+  margin: 50px auto;
+  z-index: 1002;
+  text-align: center;
+
+  @media all and (max-width: 400px) {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media all and (max-width:400px){
+	.svg-container {
+		width:210px;
+		height:210px
+	}
+}
+
+figure.svg-container > svg {
+	position:relative;fill:#000
+}
+
+/* Monogram Animation --------------------- */
+
+figure#svg1.svg-container svg path{stroke:#000;stroke-width:8;fill-opacity:0;-webkit-animation-name:draw;-o-animation-name:draw;animation-name:draw;-webkit-animation-fill-mode:forwards;-o-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:100;-o-animation-iteration-count:100;animation-iteration-count:100;-webkit-animation-timing-function:ease-in-out;-o-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+
+figure#svg1.svg-container > svg path.st1{-webkit-animation-duration:4s;-o-animation-duration:4s;animation-duration:4s;stroke-dasharray:50629.69921875;stroke-dashoffset:50629.69921875}
+
+figure#svg1.svg-container > svg path.st2,svg path.st3{display:none;fill-opacity:0;-webkit-animation-duration:3s;-o-animation-duration:3s}svg path.st2{animation-duration:3s;stroke-dasharray:16255.48828125;stroke-dashoffset:16255.48828125}
+
+figure#svg1.svg-container > svg path.st3{animation-duration:3s;stroke-dasharray:7920.55810546875;stroke-dashoffset:7920.55810546875}svg path.st4,svg path.st5{-webkit-animation-duration:3s;-o-animation-duration:3s;display:none;fill-opacity:0}
+
+figure#svg1.svg-container > svg path.st4{animation-duration:3s;stroke-dasharray:12517.8564453125;stroke-dashoffset:12517.8564453125}svg path.st5{animation-duration:3s;stroke-dasharray:5187.17333984375;stroke-dashoffset:5187.17333984375}
+
+figure#svg1.svg-container > svg path.st6{display:none;fill-opacity:0;-webkit-animation-duration:3s;-o-animation-duration:3s;animation-duration:3s;stroke-dasharray:745.725341796875;stroke-dashoffset:745.725341796875}
+
+@-webkit-keyframes draw{40%{fill-opacity:0}to{fill-opacity:1;stroke-dashoffset:0}}@-o-keyframes draw{40%{fill-opacity:0}to{fill-opacity:1;stroke-dashoffset:0}}
+
+@keyframes draw{40%{fill-opacity:0}to{fill-opacity:1;stroke-dashoffset:0}}
